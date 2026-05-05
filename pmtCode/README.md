@@ -1,6 +1,6 @@
 # plotPmtDataB3 Usage Guide
 
-This MATLAB function analyzes Photomultiplier Tube (PMT) TIFF image data across different voltage/gain settings. It pairs signal and background images, applies a zero-point offset correction (using the darkest 1% of pixels), performs background subtraction, and generates statistical plots and histograms.
+These MATLAB functions analyzes Photomultiplier Tube (PMT) TIFF image data across different voltage/gain settings. It pairs signal and background images, applies a zero-point offset correction (using the darkest 1% of pixels), performs background subtraction, and generates statistical plots and histograms. Due to discrepency in file saving between Bay1 (ScanBox) and Bay3 (ScanImage), there are different code files which do functionally the same thing and have the same input structure.
 
 ## Required Folder Structure
 The script requires a main directory containing two subdirectories: `background` and `signal`. Files must be in TIFF format and named according to their voltage/gain (e.g., `40v.tif`). A background file and its corresponding signal file must have the **exact same name**.
